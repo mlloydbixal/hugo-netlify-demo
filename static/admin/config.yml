@@ -90,13 +90,29 @@ collections:
               - {label: Address, name: address, widget: string}
       - label: "Test Config Toml"
         name: "testing"
-        file: "test/config.toml"
+        file: "test/config.json"
         fields:
           - {label: Title, name: title, widget: string}
-          - {label: Intro, name: intro, widget: markdown}
-          - label: Locations
-            name: locations
+          - {label: Theme, name: theme, widget: string}
+          - {label: Language Code, name: languageCode, widget: string}
+          - {label: Base URL, name: baseURL, widget: string}
+
+
+          - label: Languages
+            name: languages
             widget: list
             fields:
-              - {label: Name, name: name, widget: string}
-              - {label: Address, name: address, widget: string}
+              - label: English
+                name: en
+                widget: list
+                fields:
+                  - {label: Content Directory, name: contentDir, widget: string}
+                  - {label: Language Name, name: languageName, widget: string}
+                  - {label: Weight, name: weight, widget: number, value_type: int}
+              - label: Greek
+                name: gr
+                widget: list
+                fields:
+                  - {label: Content Directory, name: contentDir, widget: string}
+                  - {label: Language Name, name: languageName, widget: string}
+                  - {label: Weight, name: weight, widget: number, value_type: int}

@@ -1,0 +1,21 @@
+{
+  "DefaultContentLanguage": "en",
+  "baseURL": "https://wizardly-lichterman-87f65d.netlify.app",
+  "defaultContentLanguageInSubdir": true,
+  "languageCode": "en-us",
+  "theme": "aether",
+  "title": "Vote.gov",
+  "languages": {
+    "en": {
+      "contentDir": "content/language/en",
+      "defaultContentLanguageInSubdir": true,
+      "languageName": "English",
+      "weight": 1
+    },
+    "gr": {
+      "contentDir": "content/language/gr",
+      "languageName": "Greek",
+      "weight": 2
+    }
+  }
+}
