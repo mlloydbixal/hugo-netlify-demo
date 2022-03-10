@@ -126,11 +126,7 @@ collections:
             name: languages
             widget: list
             fields:
-              - label: Language
-                name: en
-                widget: list
-                fields:
-                  - {label: Content Directory, name: contentDir, widget: string}
-                  - {label: Language Name, name: languageName, widget: string}
-                  - {label: Language Code, name: languageCode, widget: string}
-                  - {label: Weight, name: weight, widget: number, value_type: int}
+              - {label: Content Directory, name: contentDir, widget: string}
+              - {label: Language Name, name: languageName, widget: string}
+              - {label: Language Code, name: languageCode, widget: string}
+              - {label: Weight, name: weight, widget: number, value_type: int}
