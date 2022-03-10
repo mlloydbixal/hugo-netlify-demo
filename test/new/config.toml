@@ -1,0 +1,16 @@
+title = "Vote.gov"
+theme = "aether"
+languageCode = "en-us"
+baseURL = "https://wizardly-lichterman-87f65d.netlify.app"
+
+[[languages]]
+contentDir = "content/language/en"
+languageName = "Engilsh"
+languageCode = "en"
+weight = 1
+
+[[languages]]
+contentDir = "content/language/gr"
+languageName = "Greek"
+languageCode = "gr"
+weight = 2
