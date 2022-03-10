@@ -15,3 +15,108 @@ resources:
 ---
 
 Hugo in Kombination mit dem Aether-Theme verwandelt einfach zu schreibendes Markdown in leistungsstarke Webseiten. KaTeX, Highlight.js und Hugo bieten die Möglichkeit, mathematische Symbole, Gleichungen, hervorgehobenen Code, Tabellen, Listen und vieles mehr zu erstellen.
+
+
+
+admin config
+
+backend:
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+media_folder: static/img
+public_folder: /img
+
+i18n:
+  structure: multiple_folders
+  locales: [en, gr, es]
+  default_locale: en
+
+collections:
+  - name: 'homepage'
+    label: 'Homepage'
+    folder: 'content'
+    i18n: true
+    create: true
+    slug: '_index.{{slug}}'
+    identifier_field: name
+    fields:
+      - { label: 'Language Code', name: 'name', widget: 'string', i18n: true }
+      - { label: 'Title', name: 'title', widget: 'string', i18n: true }
+      - { label: 'Date', name: 'date', widget: 'datetime', i18n: true }
+      - { label: 'Description', name: 'description', widget: 'string', i18n: true }
+
+
+  - name: 'states'
+    label: 'State Pages'
+    folder: 'content/language'
+    i18n: true
+    create: true
+    fields:
+      - label: State Code
+        name: title
+        widget: string
+        i18n: true
+      - label: State
+        name: state
+        widget: string
+        i18n: true
+      - label: Date
+        name: date
+        widget: datetime
+        i18n: duplicate
+      - label: Description
+        name: description
+        widget: markdown
+        i18n: true
+
+  - label: "Configurations"
+    name: "pages"
+    files:
+      - label: "Netlify Admin Config"
+        name: "about"
+        file: "static/admin/config.yml"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Intro, name: intro, widget: markdown}
+          - label: Team
+            name: team
+            widget: list
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: Position, name: position, widget: string}
+              - {label: Photo, name: photo, widget: image}
+      - label: "Hugo Global Config"
+        name: "locations"
+        file: "/config.toml"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Intro, name: intro, widget: markdown}
+          - label: Locations
+            name: locations
+            widget: list
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: Address, name: address, widget: string}
+
+
+hugo config
+
+baseURL = 'https://wizardly-lichterman-87f65d.netlify.app'
+languageCode = 'en-us'
+title = 'Vote.gov'
+theme = "aether"
+
+DefaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+
+
+[languages]
+  [languages.en]
+    contentDir = "content/language/en"
+    languageName = "English"
+    weight = 1
+    defaultContentLanguageInSubdir = true
+  [languages.gr]
+    contentDir = "content/language/gr"
+    languageName = "Greek"
+    weight = 2

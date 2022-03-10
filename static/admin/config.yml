@@ -88,3 +88,15 @@ collections:
             fields:
               - {label: Name, name: name, widget: string}
               - {label: Address, name: address, widget: string}
+      - label: "Test Config Toml"
+      name: "locations"
+      file: "/config.toml"
+      fields:
+        - {label: Title, name: title, widget: string}
+        - {label: Intro, name: intro, widget: markdown}
+        - label: Locations
+          name: locations
+          widget: list
+          fields:
+            - {label: Name, name: name, widget: string}
+            - {label: Address, name: address, widget: string}
