@@ -60,14 +60,17 @@ collections:
         widget: markdown
         i18n: true
 
-  - name: "index" 
-    label: "Index"  
-    files: "content/_index.md"
-    i18n: true
-    create: true
-    extension: "md"
-    description: "Index settings description"
-    fields:
-      - { label: 'Title', name: 'title', widget: 'string', i18n: true }
-      - { label: 'Date', name: 'date', widget: 'datetime', i18n: true }
-      - { label: 'Description', name: 'description', widget: 'string', i18n: true }
+- name: "general"
+  label: "Site Settings"
+  file: "site/_data/settings.json"
+  extension: "json"
+  description: "General Site Settings"
+  fields:
+      - {label: "Global title", name: "site_title", widget: "string"}
+      - label: "Post Settings"
+        name: "posts"
+        widget: "object"
+        fields:
+            - {label: "Number of posts on frontpage", name: front_limit, widget: number}
+            - {label: "Default Author", name: author, widget: string}
+            - {label: "Default Thumbnail", name: thumb, widget: image, class: "thumb"}
