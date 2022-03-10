@@ -31,11 +31,11 @@ collections:
       - label: State Code
         name: title
         widget: string
-        i18n: duplicate
+        i18n: true
       - label: State
         name: state
         widget: string
-        i18n: duplicate
+        i18n: true
       - label: Date
         name: date
         widget: datetime
