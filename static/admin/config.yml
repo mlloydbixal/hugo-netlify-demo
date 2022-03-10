@@ -28,7 +28,7 @@ collections:
     i18n: true
     create: true
     fields:
-      - label: Title
+      - label: State Code
         name: title
         widget: string
         i18n: duplicate
