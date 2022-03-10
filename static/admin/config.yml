@@ -8,7 +8,7 @@ i18n:
   structure: multiple_folders
   locales: [en, gr, es]
   default_locale: en
-
+t
 collections:
   # - name: 'blog'
   #  label: 'Blog'
@@ -60,8 +60,8 @@ collections:
         widget: markdown
         i18n: true
 
-  - name: "general"
-    label: "Site Settings"
+  - label: "Site Settings"
+    name: "general"
     file: "site/_data/settings.json"
     extension: "json"
     description: "General Site Settings"
