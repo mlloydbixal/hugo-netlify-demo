@@ -1,21 +1,19 @@
-title = "Vote.gov"
-intro = "this is intro"
+baseURL = 'https://wizardly-lichterman-87f65d.netlify.app'
+languageCode = 'en-us'
+title = 'Vote.gov'
 theme = "aether"
-languageCode = "en-us"
-baseURL = "https://wizardly-lichterman-87f65d.netlify.app"
 
-[[locations]]
-name = "locations name"
-address = "locations address"
+DefaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
 
-[[languages]]
 
-[[languages.en]]
-contentDir = "content/languge/en"
-languageName = "English"
-weight = 1
-
-[[languages.gr]]
-contentDir = "content/language/gr"
-languageName = "Greek"
-weight = 2
+[languages]
+  [languages.en]
+    contentDir = "content/language/en"
+    languageName = "English"
+    weight = 1
+    defaultContentLanguageInSubdir = true
+  [languages.gr]
+    contentDir = "content/language/gr"
+    languageName = "Greek"
+    weight = 2
