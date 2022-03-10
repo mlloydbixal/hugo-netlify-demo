@@ -96,8 +96,6 @@ collections:
           - {label: Theme, name: theme, widget: string}
           - {label: Language Code, name: languageCode, widget: string}
           - {label: Base URL, name: baseURL, widget: string}
-
-
           - label: Languages
             name: languages
             widget: list
@@ -115,4 +113,24 @@ collections:
                 fields:
                   - {label: Content Directory, name: contentDir, widget: string}
                   - {label: Language Name, name: languageName, widget: string}
+                  - {label: Weight, name: weight, widget: number, value_type: int}
+      - label: "Test Dynamic"
+        name: "testing-dynamic"
+        file: "test/new/config.toml"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Theme, name: theme, widget: string}
+          - {label: Language Code, name: languageCode, widget: string}
+          - {label: Base URL, name: baseURL, widget: string}
+          - label: Languages
+            name: languages
+            widget: list
+            fields:
+              - label: Language
+                name: en
+                widget: list
+                fields:
+                  - {label: Content Directory, name: contentDir, widget: string}
+                  - {label: Language Name, name: languageName, widget: string}
+                  - {label: Language Code, name: languageCode, widget: string}
                   - {label: Weight, name: weight, widget: number, value_type: int}
