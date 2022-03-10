@@ -60,12 +60,12 @@ collections:
         widget: markdown
         i18n: true
 
-  - label: "Pages"
+  - label: "Configurations"
     name: "pages"
     files:
-      - label: "About Page"
+      - label: "Netlify Admin Config"
         name: "about"
-        file: "site/content/about.yml"
+        file: "static/admin/config.yml"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: markdown}
@@ -76,9 +76,9 @@ collections:
               - {label: Name, name: name, widget: string}
               - {label: Position, name: position, widget: string}
               - {label: Photo, name: photo, widget: image}
-      - label: "Locations Page"
+      - label: "Hugo Global Config"
         name: "locations"
-        file: "site/content/locations.yml"
+        file: "/config.toml"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: markdown}
