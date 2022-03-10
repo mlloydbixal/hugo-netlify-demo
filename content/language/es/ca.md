@@ -1,3 +1,0 @@
----
-description: Bienvenido a California
----
