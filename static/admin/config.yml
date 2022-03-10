@@ -7,7 +7,8 @@ public_folder: /img
 i18n:
   structure: multiple_folders
   locales: [en, gr, es]
-  default_locale: ent
+  default_locale: en
+
 collections:
   # - name: 'blog'
   #  label: 'Blog'
@@ -59,17 +60,31 @@ collections:
         widget: markdown
         i18n: true
 
-  - label: "Site Settings"
-    name: "general"
-    file: "site/_data/settings.json"
-    extension: "json"
-    description: "General Site Settings"
-    fields:
-        - {label: "Global title", name: "site_title", widget: "string"}
-        - label: "Post Settings"
-          name: "posts"
-          widget: "object"
-          fields:
-              - {label: "Number of posts on frontpage", name: front_limit, widget: number}
-              - {label: "Default Author", name: author, widget: string}
-              - {label: "Default Thumbnail", name: thumb, widget: image, class: "thumb"}
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "About Page"
+        name: "about"
+        file: "site/content/about.yml"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Intro, name: intro, widget: markdown}
+          - label: Team
+            name: team
+            widget: list
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: Position, name: position, widget: string}
+              - {label: Photo, name: photo, widget: image}
+      - label: "Locations Page"
+        name: "locations"
+        file: "site/content/locations.yml"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Intro, name: intro, widget: markdown}
+          - label: Locations
+            name: locations
+            widget: list
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: Address, name: address, widget: string}
