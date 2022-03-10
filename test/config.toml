@@ -1,0 +1,6 @@
+title = "this is title"
+intro = "this is intro"
+
+[[locations]]
+name = "locations name"
+address = "locations address"
