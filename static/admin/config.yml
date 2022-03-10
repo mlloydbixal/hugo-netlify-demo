@@ -3,6 +3,12 @@ backend:
   branch: master # Branch to update (optional; defaults to master)
 media_folder: static/img
 public_folder: /img
+
+i18n:
+  structure: multiple_folders
+  locales: [en, gr]
+  default_locale: en
+
 collections:
   - name: 'blog'
     label: 'Blog'
@@ -16,3 +22,21 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'states'
+    label: 'States'
+    folder: 'content/posts'
+    i18n: true
+    create: true
+    fields:
+      - label: Title
+        name: title
+        widget: string
+        i18n: duplicate
+      - label: Date
+        name: date
+        widget: datetime
+        i18n: duplicate
+      - label: Description
+        name: description
+        widget: markdown
+        i18n: true
