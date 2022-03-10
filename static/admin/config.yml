@@ -90,7 +90,7 @@ collections:
               - {label: Address, name: address, widget: string}
       - label: "Test Config Toml"
         name: "testing"
-        file: "test/config.json"
+        file: "test/config.toml"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Theme, name: theme, widget: string}

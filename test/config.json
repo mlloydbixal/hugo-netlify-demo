@@ -1,4 +1,8 @@
 {
+  "title": "Vote.gov",
+  "theme": "aether",
+  "languageCode": "en-us",
+  "baseURL": "https://wizardly-lichterman-87f65d.netlify.app",
   "languages": [
     {
       "en": [
@@ -16,9 +20,5 @@
         }
       ]
     }
-  ],
-  "title": "Vote.gov",
-  "theme": "aether",
-  "languageCode": "en-us",
-  "baseURL": "https://wizardly-lichterman-87f65d.netlify.app"
+  ]
 }
