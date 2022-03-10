@@ -5,7 +5,7 @@
     {{ partial "nav-bar.html" . }}
     <main class="card-container side-gutter">
       {{ if or (not (eq .Description "")) (not (eq .Title "")) -}}
-      <header class="home-header" style="background-image: url('{{ "img/home-blob.svg" | absURL }}');">
+      <header class="home-header">
         <div class="home-blob-text-container">
         {{ with .Title }}<h1 class="home-blob-title">{{ . | markdownify }}</h1>{{ end }}
         {{ with .Description }}<p class="home-blob-text">{{ . }}</p>{{ end }}
@@ -21,7 +21,9 @@
           </picture>
         </div>
         {{ end -}}
-      </header>
+      </header> 
+      
+      <h3>State specific information:</h3>
       {{- end }}
       {{ with .Content -}}
       <section class="list-header-content">

@@ -6,6 +6,15 @@
       {{- $.Site.Title -}}
     {{ end -}}
   </a></h1>
+
+  <div>
+    <ul class="language-list">
+        {{ range $.Site.Home.AllTranslations }}
+        <li><a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
+        {{ end }}
+    </ul>
+</div>
+
   <div class="hamburger-menu">
     <input class="hamburger-menu-button" type="checkbox"
       onclick="hamburgerMenuPressed.call(this)"

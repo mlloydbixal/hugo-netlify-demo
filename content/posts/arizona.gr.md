@@ -1,7 +1,7 @@
 ---
 title: "Arizona"
 date: 2018-12-19T10:35:35-05:00
-description: "Hugo combined with the Aether theme turns easy to write markdown into powerful web pages.  KaTeX, Highlight.js, and Hugo provides the ability to create mathmatical symobols, equations, highlighted code, tables, lists, and much more."
+description: "Hugo in Kombination mit dem Aether-Theme verwandelt einfach zu schreibendes Markdown in leistungsstarke Webseiten. KaTeX, Highlight.js und Hugo bieten die Möglichkeit, mathematische Symbole, Gleichungen, hervorgehobenen Code, Tabellen, Listen und vieles mehr zu erstellen."
 categories: ["Features"]
 dropCap: true
 displayInMenu: false
@@ -13,3 +13,5 @@ resources:
   params:
     description: "An iphone with a website featuring the aether theme"
 ---
+
+Hugo in Kombination mit dem Aether-Theme verwandelt einfach zu schreibendes Markdown in leistungsstarke Webseiten. KaTeX, Highlight.js und Hugo bieten die Möglichkeit, mathematische Symbole, Gleichungen, hervorgehobenen Code, Tabellen, Listen und vieles mehr zu erstellen.
