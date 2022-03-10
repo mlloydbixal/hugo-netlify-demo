@@ -1,6 +1,6 @@
 baseURL = 'https://wizardly-lichterman-87f65d.netlify.app'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Vote.gov'
 theme = "aether"
 
 DefaultContentLanguage = "en"
@@ -10,12 +10,10 @@ defaultContentLanguageInSubdir = true
 [languages]
   [languages.en]
     contentDir = "content/language/en"
-    title = "My New Hugo i18n Site"
     languageName = "English"
     weight = 1
     defaultContentLanguageInSubdir = true
   [languages.gr]
     contentDir = "content/language/gr"
-    title = "Η Νεα μου Ιστιοσελιδα"
     languageName = "Greek"
     weight = 2
