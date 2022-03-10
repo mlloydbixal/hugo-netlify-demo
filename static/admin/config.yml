@@ -7,8 +7,7 @@ public_folder: /img
 i18n:
   structure: multiple_folders
   locales: [en, gr, es]
-  default_locale: en
-t
+  default_locale: ent
 collections:
   # - name: 'blog'
   #  label: 'Blog'
