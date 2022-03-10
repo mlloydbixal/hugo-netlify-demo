@@ -60,45 +60,14 @@ collections:
         widget: markdown
         i18n: true
 
-  - label: "Pages"
-    name: "pages"
+  - name: "index" 
+    label: "Index"  
+    file: "content/_index.md"
     i18n: true
     create: true
-    files:
-      - label: "About Page"
-        name: "about"
-        file: "site/content/about.yml"
-        fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Intro, name: intro, widget: markdown}
-          - label: Team
-            name: team
-            widget: list
-            fields:
-              - {label: Name, name: name, widget: string}
-              - {label: Position, name: position, widget: string}
-              - {label: Photo, name: photo, widget: image}
-      - label: "Locations Page"
-        name: "locations"
-        file: "site/content/locations.yml"
-        fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Intro, name: intro, widget: markdown}
-          - label: Locations
-            name: locations
-            widget: list
-            fields:
-              - {label: Name, name: name, widget: string}
-              - {label: Address, name: address, widget: string}
-
-      - label: "Index"
-        name: "index"
-        file: "content/_index.md"
-        i18n: true
-        create: true
-        extension: "md"
-        description: "Index settings description"
-        fields:
-          - { label: 'Title', name: 'title', widget: 'string', i18n: true }
-          - { label: 'Date', name: 'date', widget: 'datetime', i18n: true }
-          - { label: 'Description', name: 'description', widget: 'string', i18n: true }
+    extension: "md"
+    description: "Index settings description"
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', i18n: true }
+      - { label: 'Date', name: 'date', widget: 'datetime', i18n: true }
+      - { label: 'Description', name: 'description', widget: 'string', i18n: true }
