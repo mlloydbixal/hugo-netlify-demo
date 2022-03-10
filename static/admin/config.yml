@@ -91,8 +91,8 @@ collections:
 
   - label: "Site Settings"
     name: "general"
-    file: "static/admin/config.yml"
-    extension: "yml"
+    file: "original.md.json"
+    extension: "json"
     description: "General Site Settings"
     fields:
         - {label: "Global title", name: "site_title", widget: "string"}
