@@ -62,7 +62,7 @@ collections:
 
   - name: "index" 
     label: "Index"  
-    file: "content/_index.md"
+    files: "content/_index.md"
     i18n: true
     create: true
     extension: "md"
