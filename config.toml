@@ -19,3 +19,8 @@ defaultContentLanguageInSubdir = true
     languageName = "Greek"
     weight = 2
     title = 'Willkommen bei Vote.gov'
+  [languages.es]
+    contentDir = "content/language/es"
+    languageName = "Spanish"
+    weight = 3
+    title = 'Bienvenida a Vote.gov'
